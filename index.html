@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ravindu & Miniduni's Wedding</title>
+  <title>Ravindu weds Miniduni</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet"/>
   <style>
     * {
@@ -111,14 +111,24 @@
       margin: 2rem 0;
     }
 
+    .rsvp a {
+      text-decoration: none;
+    }
+
     .rsvp button {
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      background: gold;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      background: linear-gradient(to right, #FFD700, #FFB347);
       color: #111;
+      font-weight: bold;
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .rsvp button:hover {
+      background: linear-gradient(to right, #FFB347, #FFD700);
     }
 
     footer {
@@ -150,7 +160,7 @@
   <header>
     <img src="bulbs-floral.jpg" alt="Wedding Decoration">
     <div class="header-text">
-      <h1>Ravindu <span style="color:#FFD700; font-weight: bold;">&</span> Miniduni</h1>
+      <h1><span style="color:gold;">Ravindu</span> & <span style="color:gold;">Miniduni</span></h1>
       <p>
         <span class="highlight-text">The best things in life are meant to be shared.</span><br>
       </p>
@@ -170,7 +180,9 @@
   </section>
 
   <section class="rsvp">
-    <button onclick="alert('RSVP Coming Soon!')">RSVP Now</button>
+    <a href="https://forms.gle/Z8y71HMue9Nx8jLP6" target="_blank">
+      <button>RSVP Now</button>
+    </a>
   </section>
 
   <footer>
